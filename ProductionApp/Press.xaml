@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="ProductionApp.Press"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductionApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/heds.jpg"/>
+        </Grid.Background>
+        <StackPanel x:Name="Line1" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="10,36,0,0" />
+        <StackPanel x:Name="Line1Text" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="10,36,0,0"/>
+        <StackPanel x:Name="Line2" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="120,36,0,0"/>
+        <StackPanel x:Name="Line2Text" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="120,36,0,0" />
+        <StackPanel x:Name="Line2A" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="120,308,0,0"/>
+        <StackPanel x:Name="Line2AText" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="120,308,0,0"/>
+        <StackPanel x:Name="Line3" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="235,36,0,0"/>
+        <StackPanel x:Name="Line3Text" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="235,36,0,0" />
+        <StackPanel x:Name="Line4" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="350,36,0,0" />
+        <StackPanel x:Name="Line4Text" HorizontalAlignment="Left" Height="709" VerticalAlignment="Top" Width="100" Margin="350,36,0,0"/>
+        <StackPanel x:Name="Line5" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,36,0,0"/>
+        <StackPanel x:Name="Line5Text" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,36,0,0"/>
+        <StackPanel x:Name="Line5A" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,308,0,0"/>
+        <StackPanel x:Name="Line5AText" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,308,0,0"/>
+        <StackPanel x:Name="Line5B" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,416,0,0"/>
+        <StackPanel x:Name="Line5BText" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="465,416,0,0"/>
+        <StackPanel x:Name="Line6" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="580,36,0,0"/>
+        <StackPanel x:Name="Line6Text" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="580,36,0,0"/>
+        <StackPanel x:Name="Line6B" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="580,308,0,0"/>
+        <StackPanel x:Name="Line6BText" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="580,308,0,0"/>
+        <StackPanel x:Name="Line7" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="695,36,0,0"/>
+        <StackPanel x:Name="Line7Text" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="100" Margin="695,36,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,0,0,0" Text="Line 1" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red" />
+        <TextBlock HorizontalAlignment="Left" Margin="150,0,0,0" Text="Line 2" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,0,0,0" Text="Line 3" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="381,0,0,0" Text="Line 4" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="495,0,0,0" Text="Line 5" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,0,0,0" Text="Line 6" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="725,0,0,0" Text="Line 7" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE71C1C" Foreground="Red"/>
+        <HyperlinkButton Content="Back" HorizontalAlignment="Left" Margin="814,-3,0,0" VerticalAlignment="Top" Click="ClickBack"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,108 @@
+﻿<Page
+    x:Class="ProductionApp.Parts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductionApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderBrush="#FFE71111">
+        <StackPanel x:Name="ggg" HorizontalAlignment="Left" Height="539" Orientation="Vertical" VerticalAlignment="Center" Margin="50,0,0,0">
+            <StackPanel.BorderBrush>
+                <AcrylicBrush TintColor="#CCDA1B1B"/>
+            </StackPanel.BorderBrush>
+            <StackPanel HorizontalAlignment="Left" Height="50" Orientation="Horizontal" VerticalAlignment="Center" Width="804" Margin="0,0,0,0">
+                <ComboBox x:Name="BoxD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" PlaceholderText="Donald" />
+                <ComboBox x:Name="BoxJ" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="129" PlaceholderText="J" />
+                <ComboBox x:Name="BoxT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" Margin="0,0,0,0" PlaceholderText="Cock" />
+                <HyperlinkButton Content="Back" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Bak" Margin="20,0,0,0"/>
+            </StackPanel>
+            <StackPanel Width="804" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="108">
+                    <TextBlock HorizontalAlignment="Center" Text="Length" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="Lengther" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="0,25,0,0" PlaceholderText="Length"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="108">
+                    <TextBlock HorizontalAlignment="Center" Text="Width" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="Widther" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="0,25,0,0" PlaceholderText="Width"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="108" Margin="0,0.2,0,0">
+                    <TextBlock HorizontalAlignment="Center" Text="Depth" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="Depther" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="0,25,0,0" PlaceholderText="Depth"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="108">
+                    <TextBlock HorizontalAlignment="Center" Text="Expected #" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="Expecteder" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="0,25,0,0" PlaceholderText="Expected #"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="108" Margin="0,0,0,0">
+                    <TextBlock HorizontalAlignment="Center" Text="Pack Count" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="Packer" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="0,25,0,0" PlaceholderText="Expected #"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Top" Width="510">
+                <Button x:Name="Buts" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Butter"/>
+            </StackPanel>
+            <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="5,5,5,5" Margin="-398,0,0,0">
+                <Border.BorderBrush>
+                    <AcrylicBrush TintColor="#CCDC0E0E" TintTransitionDuration="00:00:00.5000000"/>
+                </Border.BorderBrush>
+                <ScrollViewer HorizontalAlignment="Center" Height="318" Margin="0,0,0,0" VerticalAlignment="Center" Width="179">
+                    <ListView x:Name="Voo" HorizontalAlignment="Center" Height="318" VerticalAlignment="Center" Width="179" Margin="0,0,0,0" SelectionChanged="Clack"/>
+                </ScrollViewer>
+            </Border>
+        </StackPanel>
+        <Viewbox HorizontalAlignment="Left" Height="100" Margin="470,189,0,0" VerticalAlignment="Top" Width="100"/>
+        <NavigationView Content="NavigationView" HorizontalAlignment="Left" Margin="1529,214,0,0" VerticalAlignment="Top" Width="100"/>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Top" Margin="665,50,0,0" Width="369">
+            <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Width="150">
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Width="150" Height="150" Margin="0,0,0,0">
+                    <TextBlock HorizontalAlignment="Center" Text="Length" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,30,0,0" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150"/>
+                    <TextBlock x:Name="LL" HorizontalAlignment="Center" Text="-" TextWrapping="Wrap" VerticalAlignment="Center" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Width="150" Margin="0,0,0,0" Height="150">
+                    <TextBlock HorizontalAlignment="Center" Text="Width" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,30,0,0" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150"/>
+                    <TextBlock x:Name="WW" HorizontalAlignment="Center" Text="-" TextWrapping="Wrap" VerticalAlignment="Center" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150" Margin="0,-1,0,15"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center" Width="150" Margin="0,0,0,0" Height="150">
+                    <TextBlock HorizontalAlignment="Center" Text="Depth" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,40,0,0" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150"/>
+                    <TextBlock x:Name="DD" HorizontalAlignment="Center" Text="-" TextWrapping="Wrap" VerticalAlignment="Center" Height="45" LineStackingStrategy="MaxHeight" FontSize="20" Width="150" Margin="0,-3,0,15"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Width="200">
+                <Border HorizontalAlignment="Center" Height="150" VerticalAlignment="Top" Width="200" BorderThickness="5,5,5,5">
+                    <Border.BorderBrush>
+                        <AcrylicBrush TintColor="#CCB70F0F"/>
+                    </Border.BorderBrush>
+                    <Image x:Name="img" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Tapped="BigBoy"/>
+
+                </Border>
+                <Border HorizontalAlignment="Center" Height="150" VerticalAlignment="Top" Width="200" BorderThickness="5,5,5,5">
+                    <Border.BorderBrush>
+                        <AcrylicBrush TintColor="#CCB70F0F"/>
+                    </Border.BorderBrush>
+                    <Image x:Name="imgA" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Tapped="BigBoy"/>
+
+
+                </Border>
+                <Border HorizontalAlignment="Center" Height="150" VerticalAlignment="Top" Width="200" BorderThickness="5,5,5,5">
+                    <Border.BorderBrush>
+                        <AcrylicBrush TintColor="#CCB70F0F"/>
+                    </Border.BorderBrush>
+                    <Image x:Name="imgB" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Tapped="BigBoy"/>
+
+
+                </Border>
+            </StackPanel>
+        </StackPanel>
+        <TextBlock x:Name="hh" HorizontalAlignment="Left" Margin="211,10,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Click="Fuck"/>
+        <TextBlock HorizontalAlignment="Left" Text="Expected Daily Count" TextWrapping="Wrap" VerticalAlignment="Top" Margin="665,506,0,0" Height="55" LineStackingStrategy="MaxHeight" FontSize="16" Width="150"/>
+        <TextBlock x:Name="dailyCount" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="849,506,0,0" Height="55" LineStackingStrategy="MaxHeight" FontSize="16" Width="150"/>
+        <TextBlock HorizontalAlignment="Left" Text="Pack Count" TextWrapping="Wrap" VerticalAlignment="Top" Margin="665,568,0,0" Height="55" LineStackingStrategy="MaxHeight" FontSize="16" Width="150"/>
+        <TextBlock x:Name="packCount" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="849,568,0,0" Height="55" LineStackingStrategy="MaxHeight" FontSize="16" Width="150"/>
+
+
+    </Grid>
+</Page>

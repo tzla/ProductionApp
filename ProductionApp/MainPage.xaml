@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="ProductionApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductionApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="Auto" Height="Auto">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/GZZ.png"/>
+        </Grid.Background>
+        <HyperlinkButton Content="Production Pal" HorizontalAlignment="Left" Margin="33,187,0,0" VerticalAlignment="Top" Click="ClickPal" Foreground="#FFD70000" Width="178" FontSize="20"/>
+        <Ellipse HorizontalAlignment="Left" Height="211" Margin="-97,-37,0,0" VerticalAlignment="Top" Width="325" FocusVisualPrimaryBrush="Black">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#E5F74646"/>
+                    <GradientStop Color="#7FB069F0" Offset="0.925"/>
+                    <GradientStop Color="#BF1564EA" Offset="0.511"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <HyperlinkButton Content="Changeover" HorizontalAlignment="Left" Margin="66,226,0,0" VerticalAlignment="Top" Click="ClickChange" Foreground="#FFD70000" FontSize="20"/>
+        <HyperlinkButton Content="Press Tracker" HorizontalAlignment="Left" Margin="66,263,0,0" VerticalAlignment="Top" Click="ClickPress" Foreground="#FFD70000" FontSize="20"/>
+        <HyperlinkButton Content="Sheet Maker" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Click="ClickSheet" Foreground="#FFD70000" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="144" Source="Assets/GS.png" Stretch="UniformToFill"/>
+        <TextBlock x:Name="poo" HorizontalAlignment="Left" Margin="302,90,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="Black"/>
+        <HyperlinkButton Content="Part Maker" HorizontalAlignment="Left" Margin="75,339,0,0" VerticalAlignment="Top" Click="ClickPart" Foreground="#FFD70000" FontSize="20"/>
+
+
+    </Grid>
+</Page>

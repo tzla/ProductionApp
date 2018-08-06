@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="ProductionApp.Sheet"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductionApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Generate" HorizontalAlignment="Left" Margin="428,8,0,0" VerticalAlignment="Top" Click="Save" Height="32"/>
+        <TextBlock x:Name="boo" HorizontalAlignment="Left" Margin="38,407,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="row" Content="make row" HorizontalAlignment="Left" Margin="325,8,0,0" VerticalAlignment="Top" Click="rowboat"/>
+        <TextBox x:Name="rownamer" HorizontalAlignment="Left" Margin="11,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="line #" InputScope="Default" Width="52"/>
+        <TextBox x:Name="row2namer" HorizontalAlignment="Left" Margin="85,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="part #" InputScope="Default" Width="82"/>
+        <TextBox x:Name="row3namerA" HorizontalAlignment="Left" Margin="172,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="coil 1"/>
+        <TextBox x:Name="row4namer" HorizontalAlignment="Left" Margin="248,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" TextChanged="checkNumber" PlaceholderText="1st count" InputScope="Number"/>
+        <TextBox x:Name="row3namerB" HorizontalAlignment="Left" Margin="172,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="coil 2"/>
+        <TextBox x:Name="row3namerC" HorizontalAlignment="Left" Margin="172,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="coil 3"/>
+        <TextBox x:Name="row5namer" HorizontalAlignment="Left" Margin="339,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" InputScope="Number" TextChanged="checkNumber" PlaceholderText="last count"/>
+        <TextBox x:Name="row6Anamer" HorizontalAlignment="Left" Margin="435,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 1" Width="83"/>
+        <TextBox x:Name="row6Bnamer" HorizontalAlignment="Left" Margin="435,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="83" PlaceholderText="Reason 2"/>
+        <TextBox x:Name="row6Cnamer" HorizontalAlignment="Left" Margin="435,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 3" Width="83"/>
+        <TextBox x:Name="row7Anamer" HorizontalAlignment="Left" Margin="533,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" TextChanged="checkNumber" PlaceholderText="Count 1" Width="79" Height="30" InputScope="Number"/>
+        <TextBox x:Name="row7Bnamer" HorizontalAlignment="Left" Margin="533,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="79" TextChanged="checkNumber" PlaceholderText="Count 2" InputScope="Number"/>
+        <TextBox x:Name="row7Cnamer" HorizontalAlignment="Left" Margin="533,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" TextChanged="checkNumber" PlaceholderText="Count 3" Width="79" InputScope="Number"/>
+        <TextBox x:Name="row8Anamer" HorizontalAlignment="Left" Margin="624,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 1"/>
+        <TextBox x:Name="row8Bnamer" HorizontalAlignment="Left" Margin="624,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="80" PlaceholderText="Reason 2"/>
+        <TextBox x:Name="row8Cnamer" HorizontalAlignment="Left" Margin="624,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 3"/>
+        <TextBox x:Name="row9Anamer" HorizontalAlignment="Left" Margin="721,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" TextChanged="checkNumber" PlaceholderText="Count 1" InputScope="Number"/>
+        <TextBox x:Name="row9Bnamer" HorizontalAlignment="Left" Margin="721,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="73" TextChanged="checkNumber" PlaceholderText="Count 2" InputScope="Number"/>
+        <TextBox x:Name="row9Cnamer" HorizontalAlignment="Left" Margin="721,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" TextChanged="checkNumber" PlaceholderText="Count 3" InputScope="Number"/>
+        <TextBox x:Name="row10Anamer" HorizontalAlignment="Left" Margin="512,301,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 1" Width="81"/>
+        <TextBox x:Name="row10Bnamer" HorizontalAlignment="Left" Margin="512,338,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="81" PlaceholderText="Reason 2"/>
+        <TextBox x:Name="row10Cnamer" HorizontalAlignment="Left" Margin="512,374,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="Reason 3" Width="81"/>
+        <TextBox x:Name="row11Anamer" HorizontalAlignment="Left" Margin="616,301,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" InputScope="Number" TextChanged="checkNumber"/>
+        <TextBox x:Name="row11Bnamer" HorizontalAlignment="Left" Margin="616,337,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" Width="64" InputScope="Number" TextChanged="checkNumber"/>
+        <TextBox x:Name="row11Cnamer" HorizontalAlignment="Left" Margin="616,374,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" InputScope="Number" TextChanged="checkNumber"/>
+        <TextBox x:Name="row12namer" HorizontalAlignment="Left" Margin="73,347,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="run time" IsReadOnly="True" InputScope="Number"/>
+        <TextBox x:Name="row13namer" HorizontalAlignment="Left" Margin="187,347,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="pan avg" IsReadOnly="True" InputScope="Number"/>
+        <TextBox x:Name="row14namer" HorizontalAlignment="Left" Margin="290,347,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="target avg" TextChanged="checkNumber" InputScope="Number"/>
+        <TextBox x:Name="row15namer" HorizontalAlignment="Left" Margin="400,347,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Background="#66FF1313" PlaceholderText="# of opers"/>
+        <DatePicker x:Name="dateMe" HorizontalAlignment="Left" Margin="11,9,0,0" VerticalAlignment="Top" MonthFormat="{}{month.abbreviated}" Width="63" Height="40">
+            <DatePicker.Projection>
+                <PlaneProjection RotationX="1" RotationZ="0"/>
+            </DatePicker.Projection>
+        </DatePicker>
+        <TextBlock HorizontalAlignment="Left" Text="Line #" TextWrapping="Wrap" VerticalAlignment="Top" Margin="23,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="part #" TextWrapping="Wrap" VerticalAlignment="Top" Margin="106,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="coil #" TextWrapping="Wrap" VerticalAlignment="Top" Margin="186,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="first press" TextWrapping="Wrap" VerticalAlignment="Top" Margin="257,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="last press" TextWrapping="Wrap" VerticalAlignment="Top" Margin="350,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Reason" TextWrapping="Wrap" VerticalAlignment="Top" Margin="453,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Count" TextWrapping="Wrap" VerticalAlignment="Top" Margin="553,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Scrap" TextWrapping="Wrap" VerticalAlignment="Top" Margin="500,54,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Reason" TextWrapping="Wrap" VerticalAlignment="Top" Margin="640,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Count" TextWrapping="Wrap" VerticalAlignment="Top" Margin="737,70,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Reject X-Pans" TextWrapping="Wrap" VerticalAlignment="Top" Margin="664,54,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Reason" TextWrapping="Wrap" VerticalAlignment="Top" Margin="529,259,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Count" TextWrapping="Wrap" VerticalAlignment="Top" Margin="628,259,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Downtime" TextWrapping="Wrap" VerticalAlignment="Top" Margin="562,237,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Run Time" TextWrapping="Wrap" VerticalAlignment="Top" Margin="79,311,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Avg Pan/Hr" TextWrapping="Wrap" VerticalAlignment="Top" Margin="186,311,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="Target Avg" TextWrapping="Wrap" VerticalAlignment="Top" Margin="299,311,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Text="# of Ops" TextWrapping="Wrap" VerticalAlignment="Top" Margin="416,311,0,0"/>
+        <HyperlinkButton Content="Back" HorizontalAlignment="Left" Margin="540,8,0,0" VerticalAlignment="Top" Click="ClickMain"/>
+
+    </Grid>
+</Page>

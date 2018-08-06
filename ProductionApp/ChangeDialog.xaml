@@ -1,0 +1,50 @@
+﻿<ContentDialog
+    x:Class="ProductionApp.ChangeDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProductionApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    PrimaryButtonText="Accept"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick" Width="800" Height="604" FontFamily="Segoe UI">
+
+    <Grid HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition x:Name="C1" Width="100"/>
+            <ColumnDefinition x:Name="C2" Width="100"/>
+            <ColumnDefinition x:Name="C3" Width="100"/>
+            <ColumnDefinition x:Name="C4" Width="100"/>
+            <ColumnDefinition x:Name="C5" Width="100"/>
+            <ColumnDefinition x:Name="C6" Width="100"/>
+            <ColumnDefinition x:Name="C7" Width="100"/>
+        </Grid.ColumnDefinitions>
+        <ListView HorizontalAlignment="Center" Height="100" VerticalAlignment="Center"/>
+        <TextBox x:Name="LineIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="2" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="Line" FontStretch="Normal" FontFamily="Segoe UI"/>
+        <TextBox x:Name="OldIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="3" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="Old Part" FontStretch="Normal"/>
+        <TextBox x:Name="NewIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="4" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="New Part" FontStretch="Normal"/>
+        <TextBox x:Name="DieIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="5" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="Die Setter" FontStretch="Normal"/>
+        <TextBox x:Name="TimeIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="6" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="Time" FontStretch="Normal"/>
+        <TextBox x:Name="HoldIn" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Grid.Column="7" Width="80" Padding="0,0,0,0" Margin="0,68,0,0" PlaceholderText="Hold Up" FontStretch="Normal"/>
+
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="2" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="Line" />
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="3" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="Old Part" />
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="4" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="New Part" />
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="5" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="Die Setter" />
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="6" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="Time" />
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="7" Width="80" Padding="0,0,0,0" Margin="0,0,0,0" Text="Hold Up" />
+
+        <TextBlock x:Name="Liners" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="2" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="Line" />
+        <TextBlock x:Name="Olders" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="3" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="Old Part" />
+        <TextBlock x:Name="Newers" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="4" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="New Part" />
+        <TextBlock x:Name="Diers" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="5" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="Die Setter" />
+        <TextBlock x:Name="Timers" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="6" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="Time" />
+        <TextBlock x:Name="Holders" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="7" Width="80" Padding="0,0,0,0" Margin="0,35,0,0" Text="Hold Up" />
+
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="24,0,0,0" Text="Old" VerticalAlignment="Center" Height="23" FontFamily="Segoe UI" Width="61"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="24,68,0,0" Text="New" VerticalAlignment="Top" Height="23" FontFamily="Segoe UI" Width="61"/>
+    </Grid>
+</ContentDialog>
