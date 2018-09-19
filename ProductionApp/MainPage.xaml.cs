@@ -44,6 +44,7 @@ namespace ProductionApp
                 TimeTracker[0].Add(hi);
                 this.InitializeComponent();
                 this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+                this.Background = new SolidColorBrush(Windows.UI.Colors.AntiqueWhite);
             }
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
