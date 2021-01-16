@@ -1,2 +1,2 @@
 # ProductionApp
-this is a work in progress that theres a 99% chance wont actually get finished
+Press control program using wireless sensors to analyze incoming sheet metal looking for defects to prevent tooling damage. 
